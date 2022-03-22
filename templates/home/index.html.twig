@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+
+	<header id="header-home">
+
+		<div>
+			<h1>{{ h1 }}</h1>
+		</div>
+	</header>
+	<section class="container">
+		<h2 class="mt-5 mb-5">Nos dernières visites</h2>
+		<div class="row">
+			{% for card in 0..5 %}
+				<div class="col-4">
+					<div class="card mt-5 mb-5">
+						<img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_960_720.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+
+			{% endfor %}
+		</div>
+	</section>
+	<section class="container-fluid join-team">
+		<h2>Rejoindre la communauté</h2>
+		<div class="row">
+			<div class="col-8 content-text">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas voluptatem culpa, modi iusto amet tempore nulla rerum quis? Odio perspiciatis vel iste veritatis. Iste, necessitatibus laudantium fugit quidem illum, recusandae, blanditiis voluptas aperiam nesciunt saepe impedit in cum harum unde animi dolorem officia optio?</p>
+			</div>
+			<div class="col-4 content-btn">
+				<a href="#" class="btn btn-primary">S'inscrire</a>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
